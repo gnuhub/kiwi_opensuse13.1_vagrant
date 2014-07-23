@@ -2,8 +2,8 @@
 
 <image schemaversion="6.1" name="VagrantBox-openSUSE-13.1">
 	<description type="system">
-		<author>Marcus Schäfer</author>
-		<contact>ms@suse.com</contact>
+		<author>Stallman Wang</author>
+		<contact>gnuhub@icloud.com</contact>
 		<specification>
 			openSUSE 13.1 vagrant base box
 		</specification>
@@ -29,9 +29,12 @@
 	<users group="vagrant">
 		<user name="vagrant" password="vh4vw1N4alxKQ" home="/home/vagrant"/>
 	</users>
-	<repository type="yast2">
-		<source path="obs://13.1/repo/oss"/>
-	</repository>
+	<repository type='rpm-md'>
+    	<source path='http://mirrors.sohu.com/opensuse/update/13.1/'/>
+  	</repository>
+  	<repository type='yast2'>
+    	<source path='http://mirrors.sohu.com/opensuse/distribution/13.1/repo/oss/'/>
+  	</repository>
 	<packages type="image">
 		<namedCollection name="base"/>
 		<product name="openSUSE"/>
